@@ -148,7 +148,7 @@ public class SolverImplTest {
     }
 
     @Test
-    public void padLeftWithZero_inputLenIsNullize3_shouldReturnNull(){
+    public void padLeftWithZero_inputLenIsNullSize3_shouldReturnNull(){
         //Given
         String input = null;
         String expected = null;
