@@ -25,7 +25,7 @@ public class SolverImpl implements Solver{
                     currentSolution.addToTotalCost(packageChoices.getPackageItems().get(j).getCost());
                     currentSolution.addToTotalWeight(packageChoices.getPackageItems().get(j).getWeight());
                     if (currentSolution.getTotalWeight() > packageChoices.getMaxWeight()) {
-                        // current total weight exceeds from max weight, it means this solution is not current and we leave it , pass to next solution
+                        // current total weight exceeds from max weight, it means this solution is not correct and we leave it , pass to next solution
                         break;
                     }
                 }
