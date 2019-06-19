@@ -41,9 +41,9 @@ public class LineParserImpl implements LineParser{
         List<PackageItem> items = new ArrayList<>();
         Matcher matcher = itemRegex.matcher(parts[1]);
         while (matcher.find()) {
-            int index = Integer.valueOf(matcher.group(1));
-            float weight = Float.valueOf(matcher.group(2));
-            int cost = Integer.valueOf(matcher.group(3));
+            int index = Integer.parseInt(matcher.group(1));
+            float weight = Float.parseFloat(matcher.group(2));
+            int cost = Integer.parseInt(matcher.group(3));
             PackageItem packageItem = new PackageItem(index,weight,cost);
             lineValidator.validatePackageItemDataRange(packageItem);
             items.add(packageItem);
