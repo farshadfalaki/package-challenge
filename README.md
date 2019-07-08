@@ -1,5 +1,5 @@
 # package-challenge
-This project is for Mobiquity company assignment : Packaging challenge.
+This project is for  Packaging challenge.
 
 ### Introduction
 You want to send your friend a package with different things. Each thing you put inside the package has such parameters as index number, weight and cost. The package has a weight limit.
